@@ -912,10 +912,10 @@ header .header-bottom .right-col {
 /* product-css-end */
 
 /* category-css start */
-/* .categories .inner {
+.categories .inner {
   display: flex;
-  margin: 0 -20px;
-} */
+  /* margin: 0 -20px; */
+}
 
 .categories .inner .category {
   margin: 0 20px;
