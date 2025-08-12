@@ -56,9 +56,12 @@
   .container {
     padding: 0 25px;
   }
+  .store-inner-detail {
+    gap: 24px;
+  }
 
   .store-right {
-    max-width: 550px;
+    max-width: 800px;
   }
 
   .logo {
@@ -127,7 +130,6 @@
   }
 
   .brand-label,
-  .product-price,
   .product-detail-box {
     margin-bottom: 40px;
   }
@@ -181,6 +183,9 @@
 
   .shipping-info-row {
     max-width: 360px;
+  }
+  .product-price-bar {
+    margin-bottom: 40px;
   }
 }
 
@@ -530,7 +535,6 @@
   }
 
   .brand-label,
-  .product-price,
   .product-detail-box {
     margin-bottom: 24px;
   }
@@ -715,6 +719,32 @@
 }
 
 @media (max-width: 1024px) {
+  .product-box-link {
+    flex-direction: column;
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding: 0px !important;
+  }
+
+  .store-map {
+    margin: 0 0 20px;
+  }
+
+  .store-map img {
+    width: 100%;
+  }
+
+  .store-label {
+    display: none;
+  }
+  .quote-link img {
+    width: 18px;
+    height: 18px;
+  }
+  .product-box-inner {
+    gap: 16px;
+  }
+
   .top-bar {
     display: none;
   }
@@ -1233,7 +1263,16 @@
     width: 100%;
     max-width: 100%;
   }
-
+  .product-price-bar {
+    margin-bottom: 24px;
+  }
+  .category-chip span {
+    font-size: 14px;
+  }
+  .category-chip img {
+    width: 16px;
+    height: 16px;
+  }
   .order-tracking-container {
     flex-direction: column;
     gap: 0;
@@ -2106,7 +2145,7 @@
 
   .banner .deals {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .banner .deals,
@@ -2696,6 +2735,37 @@
 }
 
 @media (max-width: 680px) {
+  .product-detail-left,
+  .product-detail-right {
+    width: 100%;
+  }
+  .store-locator-button {
+  }
+  .product-karat-banner {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .product-karat-banner img {
+    width: 16px;
+    height: 16px;
+  }
+  .product-karat-banner span {
+    display: inline-block;
+  }
+  .product-detail-info {
+    max-width: 100%;
+  }
+
+  .mobile-product-detail {
+    display: block;
+  }
+
+  .product-detail-right {
+    display: none;
+  }
+
   .tracking-timeline-desktop .tracking-info-box {
     display: none;
   }
@@ -2956,19 +3026,6 @@
 
   .loan-wrapper-inner .account-inner-left {
     max-width: 100%;
-  }
-
-  .product-detail-left,
-  .product-detail-right {
-    width: 100%;
-  }
-
-  .mobile-product-detail {
-    display: block;
-  }
-
-  .product-detail-right {
-    display: none;
   }
 }
 
@@ -3495,6 +3552,8 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 126px !important;
+    margin-inline: 8px;
   }
 
   .categories .inner {
@@ -3544,6 +3603,13 @@
 
   .quote-tag-line h4 {
     font-size: 24px;
+  }
+  .product-wrapper.categories .slick-track {
+    display: flex;
+    gap: 16px;
+  }
+  .category h3 {
+    white-space: nowrap;
   }
 }
 
